@@ -1,3 +1,4 @@
+// Copyright (c) by Ujjwal Gupta(@UG-SEP)
 #include<stdio.h>
 struct Book
 {
