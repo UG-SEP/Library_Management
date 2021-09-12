@@ -1,5 +1,6 @@
 // Copyright (c) by Ujjwal Gupta(@UG-SEP)
 #include<stdio.h>
+#include<stdlib.h>
 struct Book
 {
     int BI;
@@ -34,6 +35,7 @@ float price;
             t=t->next;
      t->next=temp;
     }
+    printf("Your book has been added successfully,press any key to continue.\n");
 }
 void Get_Book(struct Book *Start)
 {
@@ -47,6 +49,7 @@ void Get_Book(struct Book *Start)
         printf("Book Price: %f\n\n",Start->price);
         Start=Start->next;
     }
+    printf("Press any key to continue\n");
 }
 void Delete_Book(struct Book **Start,int Book_ID)
 { struct Book *temp,*t;
@@ -81,6 +84,7 @@ int i=0;
        }
 
     }
+    printf("The book has been deleted successfully,press any key to continue.\n");
 }
 void Search_Book(struct Book *Start,int Book_ID)
 { int i=0;
@@ -109,6 +113,7 @@ void Search_Book(struct Book *Start,int Book_ID)
         printf("Book Price: %f\n",Start->price);
         }
     }
+    printf("Press any key to continue\n");
 }
 int menu(void)
 {
@@ -122,7 +127,7 @@ int menu(void)
     scanf("%d",&choice);
     return(choice);
 }
-main()
+int main()
 { int data;
     struct Book *Start=NULL;
     while(1)
@@ -149,7 +154,7 @@ main()
             exit(0);
 
                     }
-                    getche();
+                    getchar();
     }
-
+return 1;
 }
