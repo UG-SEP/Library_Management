@@ -1,5 +1,6 @@
 // Copyright (c) by Ujjwal Gupta(@UG-SEP)
 #include<stdio.h>
+#include<stdlib.h>
 struct Book
 {
     int BI;
@@ -149,7 +150,7 @@ main()
             exit(0);
 
                     }
-                    getche();
+                    getch();
     }
 
 }
